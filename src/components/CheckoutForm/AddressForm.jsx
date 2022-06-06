@@ -66,7 +66,7 @@ const AddressForm = ({ checkoutToken, test }) => {
               </Select>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <InputLabel>Shipping Subdivision</InputLabel>
+              <InputLabel>Shipping Division</InputLabel>
               <Select value={shippingSubdivision} fullWidth onChange={(e) => setShippingSubdivision(e.target.value)}>
                 {Object.entries(shippingSubdivisions).map(([code, name]) => ({ id: code, label: name })).map((item) => (
                   <MenuItem key={item.id} value={item.id}>
